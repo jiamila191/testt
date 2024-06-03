@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <FrameLayout
+        android:id="@+id/container_utec_login"
+        android:layout_width="411dp"
+        android:layout_height="887dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/container_utec_login"
+        tools:ignore="MissingConstraints,UselessParent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-14dp">
+
+        <TextView
+            android:id="@+id/text_no_cuenta_registrate_aqui"
+            android:layout_width="267dp"
+            android:layout_height="62dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="581dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="22dp"
+            android:text="¿No tienes una cuenta? Registrate aquí"
+            android:textColor="#FF000000"
+            android:textSize="14dp" />
+
+        <FrameLayout
+            android:id="@+id/container_btn"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="494dp">
+
+            <Button
+                android:id="@+id/btn_iniciar_sesion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2196F3"
+                android:singleLine="true"
+                android:text="Iniciar Sesión"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_bienvenido_gestion_lti"
+            android:layout_width="357dp"
+            android:layout_height="146dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center_horizontal|top"
+            android:includeFontPadding="false"
+            android:lineHeight="15dp"
+            android:text="Bienvenido\n\n\n\n\n\n\nGestión LTI"
+            android:textColor="#FF00AEEF"
+            android:textSize="36dp" />
+
+        <ImageView
+            android:id="@+id/image_isologotipo_fondo_blanco"
+            android:layout_width="95dp"
+            android:layout_height="66dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="294dp"
+            android:layout_marginTop="47dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_isologotipo_fondo_blanco" />
+
+        <ImageView
+            android:id="@+id/image_image"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="183dp"
+            android:layout_marginTop="220dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_image" />
+
+        <LinearLayout
+            android:id="@+id/container_nombre_usuario"
+            android:layout_width="282dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="338dp"
+            android:background="@drawable/container_nombre_usuario"
+            android:clipToPadding="false"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp">
+
+            <EditText
+                android:id="@+id/editText_nombre_usuario"
+                android:layout_width="267dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:hint="Nombre de usuario"
+                android:textColorHint="#FFA6A6A6"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_contrasenia"
+            android:layout_width="282dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/container_contrasenia"
+            android:clipToPadding="false"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp">
+
+            <EditText
+                android:id="@+id/editText_contrasenia"
+                android:layout_width="265dp"
+                android:layout_height="40dp"
+                android:gravity="left|center_vertical"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColorHint="#FFA6A6A6"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText_contrasenia"
+        app:layout_constraintStart_toStartOf="@+id/editText_contrasenia"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="NotSibling" />
+</androidx.constraintlayout.widget.ConstraintLayout>

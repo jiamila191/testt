@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Gestión LTI</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Bienvenido/a!"</string>
+    <string name="invalid_username">El nombre debe tener entre 3 y 20 caracteres</string>
+    <string name="invalid_password">La contraseña debe tener más de 8 caracteres</string>
+    <string name="login_failed">Nombre de usuario o contraseña incorrectos</string>
+    <string name="navegation_drawer_open">"Open"</string>
+    <string name="navegation_drawer_close">"Close"</string>
+</resources>
